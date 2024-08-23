@@ -1,0 +1,171 @@
+/* Reseta margens e preenchimentos padrão, define box-sizing e fonte global */
+* {
+  margin: 0; /* Remove a margem padrão dos elementos */
+  padding: 0; /* Remove o preenchimento padrão dos elementos */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+  font-family: 'Montserrat' /* Define a fonte padrão do documento */
+}
+
+/* Estiliza o contêiner geral que ocupa toda a tela */
+.container-geral {
+  height: 100vh; /* Define a altura para 100% da altura da viewport */
+  width: 100vw; /* Define a largura para 100% da largura da viewport */
+  display: flex; /* Usa Flexbox para o layout */
+  justify-content: center; /* Centraliza o contêiner interno horizontalmente */
+  align-items: center; /* Centraliza o contêiner interno verticalmente */
+  background: linear-gradient(135deg, #000000, #2e3574); /* Gradiente escuro de fundo */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o contêiner */
+}
+
+/* Estiliza o contêiner principal */
+.container {
+  width: 80vw; /* Define a largura para 80% da largura da viewport */
+  height: 90vh; /* Define a altura para 90% da altura da viewport */
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+  backdrop-filter: blur(8px); /* Adiciona um desfoque ao fundo do contêiner */
+  border-radius: 16px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra profunda */
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 30px; /* Adiciona preenchimento interno */
+}
+
+/* Estiliza o cabeçalho superior */
+.header-top {
+  background: linear-gradient(90deg, #2e3574, #000000); /* Gradiente de fundo */
+  color: #ffffff; /* Define a cor do texto como branca */
+  padding: 20px; /* Adiciona preenchimento interno */
+  border-radius: 12px; /* Adiciona bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  margin-bottom: 30px; /* Adiciona espaço abaixo do cabeçalho */
+  position: relative; /* Define um contexto para o posicionamento da imagem */
+  font-size: 24px; /* Define o tamanho da fonte */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil */
+}
+
+/* Estiliza o elemento <main> */
+main {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: calc(100% - 80px); /* Ajusta a altura para preencher o restante do contêiner */
+}
+
+/* Estiliza o contêiner de conteúdo */
+.conteudo {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  align-items: center; /* Centraliza horizontalmente o conteúdo */
+  min-height: 200px; /* Define uma altura mínima */
+  width: 100%; /* Ocupa toda a largura do elemento pai */
+  background: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+  border-radius: 12px; /* Adiciona bordas arredondadas */
+  padding: 20px; /* Adiciona preenchimento interno */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* Adiciona uma sombra mais profunda */
+  margin-bottom: 30px; /* Adiciona espaço abaixo do contêiner de conteúdo */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para efeitos */
+}
+
+.conteudo:hover {
+  transform: translateY(-5px); /* Levanta o contêiner ao passar o mouse */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Intensifica a sombra */
+}
+
+/* Estiliza o texto dentro da div .conteudo */
+.conteudo div {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza a imagem dentro do contêiner de conteúdo */
+.conteudo img {
+  border-radius: 50%; /* Adiciona bordas arredondadas para formar um círculo */
+  width: 150px; /* Define a largura da imagem */
+  height: 150px; /* Define a altura da imagem */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+  border: 4px solid #000000; /* Adiciona uma borda branca ao redor da imagem */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+/* Estiliza o título dentro do contêiner de conteúdo */
+.conteudo h1 {
+  font-size: 32px; /* Define o tamanho da fonte do título */
+  color: #333333; /* Cor de texto escura para o título */
+  margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao texto */
+}
+
+/* Estiliza o parágrafo dentro do contêiner de conteúdo */
+.conteudo p {
+  font-size: 1.2em; /* Define o tamanho da fonte do parágrafo */
+  color: #666666; /* Cor de texto cinza para o parágrafo */
+  line-height: 1.5; /* Melhora a legibilidade */
+}
+
+/* Estiliza o formulário */
+.form {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Alinha o conteúdo ao início (esquerda) */
+  align-items: center; /* Alinha o conteúdo ao início (esquerda) */
+  text-align: left; /* Alinha o texto à esquerda */
+  width: 100%; /* Ocupa 100% da largura do contêiner pai */
+}
+
+/* Estiliza o título dentro do formulário */
+.form h1 {
+  font-size: 2.5em; /* Define o tamanho da fonte do título */
+  color: #333333; /* Cor de texto escura para o título */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao texto */
+}
+
+/* Estiliza o campo de entrada do formulário */
+.form input {
+  outline: none; /* Remove a borda de foco padrão */
+  padding: 12px; /* Adiciona preenchimento interno */
+  font-size: 1em; /* Define o tamanho da fonte */
+  border: 1px solid #ccc; /* Define a borda do campo de entrada */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  width: 100%; /* Define a largura do campo de entrada */
+  max-width: 400px; /* Define a largura máxima do campo de entrada */
+  margin-bottom: 15px; /* Adiciona espaço abaixo do campo de entrada */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transição suave para foco */
+}
+
+.form input:focus {
+  border-color: #2e3574; /* Muda a cor da borda ao focar */
+  box-shadow: 0 0 5px rgba(46, 53, 116, 0.3); /* Adiciona uma sombra ao redor do campo de entrada */
+}
+
+/* Estiliza o botão dentro do formulário */
+.form button {
+  padding: 12px 24px; /* Adiciona preenchimento interno */
+  font-size: 1em; /* Define o tamanho da fonte */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  background: linear-gradient(90deg, #2e3574, #4b5d9c); /* Gradiente de fundo para o botão */
+  color: #ffffff; /* Define a cor do texto como branca */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+  transition: 0.3s, transform 0.3s; /* Adiciona transição suave para a cor de fundo e transformação */
+}
+
+.form button:hover {
+  background: linear-gradient(90deg, #4b5d9c, #2e3574); /* Inverte o gradiente ao passar o cursor */
+  transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Estiliza a imagem pequena */
+.imgt {
+  position: absolute; /* Remove a imagem do fluxo normal e permite o posicionamento */
+  top: 20px; /* Ajusta a posição do topo */
+  left: 20px; /* Ajusta a posição do lado esquerdo */
+  border-radius: 50%; /* Adiciona bordas arredondadas para formar um círculo */
+  width: 50px; /* Define a largura da imagem */
+  height: 50px; /* Define a altura da imagem */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+  border: 2px solid #000000; /* Adiciona uma borda branca ao redor da imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
